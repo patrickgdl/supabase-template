@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  display: block;
+  font-size: 13px;
+  @media (min-width: 1024px) {
+    font-size: 16px;
+  }
+}
+
+body {
+  @apply bg-gray-700 text-gray-100;
+  background: linear-gradient(
+    176deg,
+    rgba(18, 24, 27, 1) 50%,
+    rgba(32, 39, 55, 1) 100%
+  );
+  min-height: 100vh;
+  background-attachment: fixed;
+  @include scrollbar;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-display font-normal text-white text-2xl;
+}
+
+p {
+  @apply font-display font-normal text-white;
+}
+
+svg {
+  width: auto;
+}
